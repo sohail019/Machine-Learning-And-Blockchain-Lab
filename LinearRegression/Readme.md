@@ -29,7 +29,7 @@ Linear Regression is a simple yet powerful statistical technique used to model t
       <li>matplotlib</li>
       <li>scikit-learn</li>
     </ul>
-    <li><strong>Explore the Notebooks and Python Scripts:</strong> Inside this repository, you'll find Jupyter notebooks and
+    <li><strong>Explore the Google Collab and Python Scripts:</strong> Inside this repository, you'll find Google Collab and
       Python scripts that cover the topics of linear regression. These resources are designed to guide you through the
       concepts and implementation step-by-step.</li>
     <li><strong>Experiment with Different Datasets:</strong> To gain a deeper understanding of linear regression, we encourage
