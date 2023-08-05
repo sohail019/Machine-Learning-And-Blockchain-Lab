@@ -38,7 +38,7 @@ Welcome to the Machine Learning & Blockchain Lab repository! 🚀 Here, we delve
       with the algorithms and techniques.
     </li>
    <li>
-      <strong> 🌟 Star Your Favorites: If you find anything exciting or helpful, don't forget to star the repository. Starring helps you keep track of your favorite resources and shows appreciation to the contributors.
+      <strong> 🌟 Star Your Favorites: </strong>If you find anything exciting or helpful, don't forget to star the repository. Starring helps you keep track of your favorite resources and shows appreciation to the contributors.
     </li>
     <li>
       <strong> 🤝 Contribute and Collaborate:</strong> We invite you to contribute your projects, tutorials, and valuable
