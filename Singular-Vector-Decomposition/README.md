@@ -17,7 +17,6 @@ Before diving into SVD, ensure you have the following Python libraries installed
 
 - NumPy
 - SciPy
-- matplotlib
 
 ## Exploring the Resources
 Inside this folder, you'll find Collab notebooks and Python scripts that cover various aspects of SVD. These resources are designed to guide you through the concepts and implementations step by step.
