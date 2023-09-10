@@ -8,8 +8,7 @@ Singular Value Decomposition (SVD) is a fundamental matrix factorization techniq
 ## Contents
 - Introduction to SVD: Grasp the fundamental concepts and principles of SVD.
 - SVD in Dimensionality Reduction: Explore how SVD is used to reduce the dimensionality of data while preserving critical information.
-- Image Compression with SVD: Discover how SVD can be applied for efficient image compression.
-- Collaborative Filtering with SVD: Learn about the role of SVD in recommendation systems.
+- Image Compression with SVD: Discover how SVD can be applied for efficient image compression.n recommendation systems.
 - SVD in Real-Life Applications: Apply SVD to real-world datasets and solve practical problems.
 - Best Practices: Gain insights into best practices for effective SVD modeling and implementation.
 
