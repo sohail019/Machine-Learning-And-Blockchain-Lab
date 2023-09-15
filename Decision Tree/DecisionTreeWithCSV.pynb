@@ -20,3 +20,15 @@ clf = DecisionTreeClassifier(criterion='gini')
 
 # Train the classifier on the training data
 clf.fit(X_train, y_train)
+
+# Predict purchase type for the test data
+y_pred = clf.predict(X_test)
+
+# Calculate accuracy
+accuracy = accuracy_score(y_test, y_pred)
+
+# Print results
+print("Predicted:", y_pred)
+print("Actual:", y_test)
+print("Accuracy:", accuracy)
+print("\n")
