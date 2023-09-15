@@ -11,3 +11,12 @@ data = pd.read_csv("SohailFruitsAndVegetablesShop.csv")
 # Extract features and labels
 X = data[["Age", "Purchase Amount"]].values
 y = data["Purchase Type"].values
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create a Decision Tree classifier with Gini index as the criterion
+clf = DecisionTreeClassifier(criterion='gini')
+
+# Train the classifier on the training data
+clf.fit(X_train, y_train)
