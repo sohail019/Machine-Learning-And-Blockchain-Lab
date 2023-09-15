@@ -3,3 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
+
+# Synthetic data for customer age, purchase amount, and purchase type (fruits or vegetables)
+age = np.array([25, 30, 35, 20, 40, 28, 45, 50, 22, 38])
+purchase_amount = np.array([50, 60, 75, 40, 80, 55, 90, 95, 45, 70])
+purchase_type = np.array(['Fruits', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits'])
