@@ -27,4 +27,9 @@ y_pred = clf.predict(X_test)
 # Calculate accuracy
 accuracy = accuracy_score(y_test, y_pred)
 
+# Print results
+print("Predicted:", y_pred)
+print("Actual:", y_test)
+print("Accuracy:", accuracy)
+print("\n")
 
