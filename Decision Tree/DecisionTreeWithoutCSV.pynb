@@ -20,3 +20,6 @@ clf = DecisionTreeClassifier(criterion='gini')
 
 # Train the classifier on the training data
 clf.fit(X_train, y_train)
+
+# Predict purchase type for the test data
+y_pred = clf.predict(X_test)
