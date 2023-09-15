@@ -8,3 +8,11 @@ import matplotlib.pyplot as plt
 age = np.array([25, 30, 35, 20, 40, 28, 45, 50, 22, 38])
 purchase_amount = np.array([50, 60, 75, 40, 80, 55, 90, 95, 45, 70])
 purchase_type = np.array(['Fruits', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits', 'Vegetables', 'Fruits'])
+
+# Combine features into a single 2D array (X)
+X = np.column_stack((age, purchase_amount))
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, purchase_type, test_size=0.2, random_state=42)
+
+
