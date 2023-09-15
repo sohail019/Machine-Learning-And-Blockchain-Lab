@@ -32,3 +32,9 @@ print("Predicted:", y_pred)
 print("Actual:", y_test)
 print("Accuracy:", accuracy)
 print("\n")
+
+# Plot the Decision Tree
+plt.figure(figsize=(10, 6))
+plot_tree(clf, feature_names=["Age", "Purchase Amount"], class_names=clf.classes_, filled=True, rounded=True)
+plt.title("Decision Tree for Fruits and Vegetables Shop")
+plt.show()
