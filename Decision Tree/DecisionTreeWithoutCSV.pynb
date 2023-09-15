@@ -16,3 +16,5 @@ X = np.column_stack((age, purchase_amount))
 X_train, X_test, y_train, y_test = train_test_split(X, purchase_type, test_size=0.2, random_state=42)
 
 
+# Create a Decision Tree classifier with Gini index as the criterion
+clf = DecisionTreeClassifier(criterion='gini')
