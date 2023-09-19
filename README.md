@@ -1,5 +1,3 @@
-# Machine-Learning-And-Blockchain-Lab
-Welcome to the Machine Learning & Blockchain Lab repository! 🚀 Here, we delve into the exciting realms of Machine Learning and Blockchain technologies. Our aim is to explore various ML algorithms and advance our understanding of blockchain concepts through hands-on projects and experiments.
 
 <h1>What's Inside?</h1> 
 
