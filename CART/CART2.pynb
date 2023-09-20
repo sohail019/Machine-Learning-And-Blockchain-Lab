@@ -25,3 +25,12 @@ class DecisionTree:
         best_split = self.find_best_split(X, y)
         if best_split is None:
             return unique_classes[np.argmax(num_unique_classes)]
+
+ # Recursive splitting
+        feature_idx, threshold = best_split
+        left_mask = X[:, feature_idx] <= threshold
+        right_mask = ~left_mask
+        left_subtree = self.fit(X[left_mask], y[left_mask], depth + 1)
+        right_subtree = self.fit(X[right_mask], y[right_mask], depth + 1)
+
+        return (feature_idx, threshold, left_subtree, right_subtree)
