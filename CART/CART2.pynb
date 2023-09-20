@@ -1,1 +1,6 @@
+import numpy as np
 
+# Sample dataset (features)
+X = np.array([[2, 3], [5, 4], [9, 6], [4, 7], [8, 1], [7, 2]])
+# Corresponding target labels (0 for class A, 1 for class B)
+y = np.array([0, 1, 0, 1, 1, 0])
