@@ -5,3 +5,11 @@ Welcome to the Classification and Regression Trees (CART) Implementation project
 
 ## What is CART?
 Classification and Regression Trees (CART) is a decision tree algorithm that can be used for both classification and regression tasks. It recursively splits the dataset into subsets based on the most significant feature, resulting in a tree-like structure that can make predictions or classify data points.
+
+
+## Features
+- Implementation of CART for both classification and regression.
+- Gini impurity and weighted Gini impurity as splitting criteria for classification.
+- Mean squared error as the splitting criterion for regression.
+- Tree pruning to avoid overfitting.
+- Real-world examples and use cases.
