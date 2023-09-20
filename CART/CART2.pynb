@@ -4,3 +4,11 @@ import numpy as np
 X = np.array([[2, 3], [5, 4], [9, 6], [4, 7], [8, 1], [7, 2]])
 # Corresponding target labels (0 for class A, 1 for class B)
 y = np.array([0, 1, 0, 1, 1, 0])
+
+class DecisionTree:
+    def __init__(self, max_depth=None):
+        self.max_depth = max_depth
+
+    def fit(self, X, y, depth=0):
+        num_samples, num_features = X.shape
+        unique_classes, num_unique_classes = np.unique(y, return_counts=True)
