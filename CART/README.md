@@ -44,15 +44,9 @@ We welcome contributions from the community! If you find any issues, have improv
 ## Resources
 For a more in-depth understanding of CART, check out the resources provided in the resources directory. You'll find books, articles, and online courses to further enhance your knowledge of Classification and Regression Trees.
 
-License
+## License
 This repository is open-source and available under the MIT License. You are free to use, modify, and distribute the code and resources following the terms of the license.
 
 Explore the world of Classification and Regression Trees with this implementation and dive into the power of decision trees in machine learning!
 
-You can copy and paste this markdown content into your project's README.md file. Make sure to customize the placeholders like library names, installation instructions, and contact information as needed.
-
-
-
-
-Regenerate
 
