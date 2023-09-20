@@ -13,3 +13,19 @@ Classification and Regression Trees (CART) is a decision tree algorithm that can
 - Mean squared error as the splitting criterion for regression.
 - Tree pruning to avoid overfitting.
 - Real-world examples and use cases.
+
+## Contents
+- Introduction to CART: Understand the basic concepts and principles of CART.
+- CART for Classification: Implement CART for classification tasks.
+- CART for Regression: Apply CART for regression problems.
+- Gini Impurity and Weighted Gini: Learn about Gini impurity and weighted Gini for classification.
+- Mean Squared Error: Explore mean squared error for regression.
+- Tree Pruning: Discover techniques for tree pruning to prevent overfitting.
+- Real-World Examples: Apply CART to real-world datasets and problem statements.
+- Best Practices: Find tips and best practices for effective CART modeling.
+
+## Getting Started
+Before using CART, ensure you have the following Python libraries installed:
+
+- NumPy
+- matplotlib (for visualization, optional)
