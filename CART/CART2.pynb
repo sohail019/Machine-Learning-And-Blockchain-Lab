@@ -63,3 +63,9 @@ class DecisionTree:
                     best_split = (feature_idx, threshold)
 
         return best_split
+
+ def gini(self, y):
+        _, counts = np.unique(y, return_counts=True)
+        probs = counts / len(y)
+        return 1 - np.sum(probs ** 2)
+
