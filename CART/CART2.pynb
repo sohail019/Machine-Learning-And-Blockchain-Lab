@@ -67,5 +67,30 @@ class DecisionTree:
  def gini(self, y):
         _, counts = np.unique(y, return_counts=True)
         probs = counts / len(y)
-        return 1 - np.sum(probs ** 2)
+        return 1 - np.sum(probs ** 2
+
+def predict(self, X):
+        return np.array([self._predict(x) for x in X])
+
+    def _predict(self, x):
+        if isinstance(self.tree, np.ndarray):
+            return self.tree
+
+        feature_idx, threshold, left_subtree, right_subtree = self.tree
+        if x[feature_idx] <= threshold:
+            return self._predict(left_subtree)
+        else:
+            return self._predict(right_subtree)
+
+
+# Create a CART classifier and fit it to the dataset
+cart_classifier = DecisionTree(max_depth=3)
+cart_classifier.tree = cart_classifier.fit(X, y)
+
+# Test the classifier on new data
+new_data = np.array([[3, 4], [6, 5]])
+predictions = cart_classifier.predict(new_data)
+
+for i, prediction in enumerate(predictions):
+    print(f"Data {new_data[i]} is predicted as class {prediction}")
 
