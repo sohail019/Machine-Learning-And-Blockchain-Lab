@@ -34,3 +34,32 @@ class DecisionTree:
         right_subtree = self.fit(X[right_mask], y[right_mask], depth + 1)
 
         return (feature_idx, threshold, left_subtree, right_subtree)
+ def find_best_split(self, X, y):
+        num_samples, num_features = X.shape
+        if num_samples <= 1:
+            return None
+
+        parent_gini = self.gini(y)
+
+        best_gini = 1.0
+        best_split = None
+
+        for feature_idx in range(num_features):
+            thresholds = np.unique(X[:, feature_idx])
+            for threshold in thresholds:
+                left_mask = X[:, feature_idx] <= threshold
+                right_mask = ~left_mask
+
+                if np.sum(left_mask) == 0 or np.sum(right_mask) == 0:
+                    continue
+
+                left_gini = self.gini(y[left_mask])
+                right_gini = self.gini(y[right_mask])
+
+                weighted_gini = (np.sum(left_mask) / num_samples) * left_gini + (np.sum(right_mask) / num_samples) * right_gini
+
+                if weighted_gini < best_gini:
+                    best_gini = weighted_gini
+                    best_split = (feature_idx, threshold)
+
+        return best_split
