@@ -12,3 +12,16 @@ class DecisionTree:
     def fit(self, X, y, depth=0):
         num_samples, num_features = X.shape
         unique_classes, num_unique_classes = np.unique(y, return_counts=True)
+
+# Check if only one class remains or the tree depth limit is reached
+        if num_unique_classes == 1 or (self.max_depth and depth == self.max_depth):
+            return unique_classes[0]
+
+        # If there are no more features to split or all samples belong to one class
+        if num_features == 0 or num_unique_classes == 1:
+            return unique_classes[np.argmax(num_unique_classes)]
+
+        # Find the best split
+        best_split = self.find_best_split(X, y)
+        if best_split is None:
+            return unique_classes[np.argmax(num_unique_classes)]
