@@ -30,10 +30,10 @@ Before using CART, ensure you have the following Python libraries installed:
 - NumPy
 - matplotlib (for visualization, optional)
 
-  Exploring the Resources
+# Exploring the Resources
 Inside this repository, you'll find Jupyter notebooks and Python scripts that cover various aspects of CART. These resources are designed to guide you through the concepts and implementations step by step.
 
-Experiment with Diverse Datasets
+# Experiment with Diverse Datasets
 To gain a deeper understanding of CART, we encourage you to experiment with different datasets. Apply CART to various data scenarios to observe how it constructs decision trees and makes predictions.
 
 By working with diverse datasets, you'll uncover the versatility of CART in addressing real-world classification and regression challenges.
